@@ -1,0 +1,30 @@
+# This hosts file for DD-WRT Routers with DNSMasq is brought to you by 
+# https://www.mypdns.org/
+# Copyright: Content: https://gitlab.com/spirillen
+# Source:Content: 
+#
+# Original attributes and credit
+# This hosts file for DD-WRT Routers with DNSMasq is brought to you by Mitchell Krog
+# Copyright:Code: https://github.com/mitchellkrogza
+# Source:Code: https://github.com/mitchellkrogza/Badd-Boyz-Hosts
+# The credit for the original bash scripts goes to Mitchell Krogza
+
+# You are free to copy and distribute this file for non-commercial uses,
+# as long the original URL and attribution is included. 
+
+# Please forward any additions, corrections or comments by logging an issue at
+# https://gitlab.com/my-privacy-dns/support/issues
+
+##### Version Information #
+###################################################
+### Version: V1.2019.09.42
+##### Version Information ##
+
+# Use this file to prevent your computer or server from connecting to selected
+# internet hosts. This is an easy and effective way to protect you from 
+# many types of spyware, adware, malware, click-jacking and porn sites and reduces 
+# bandwidth use. 
+
+# START DNSMASQ LIST ### DO NOT EDIT THIS LINE AT ALL ###
+address=/google.com/
+# END DNSMASQ LIST ### DO NOT EDIT THIS LINE AT ALL ###
