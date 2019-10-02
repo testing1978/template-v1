@@ -7,7 +7,6 @@ language: python
 
 python:
   - "3.7"
-  #- "3.6"
 
 cache:
   - pip
@@ -22,7 +21,7 @@ env:
     #- GIT_NAME: "Spirillen"
     #- GIT_EMAIL: 44526987+spirillen@users.noreply.github.com
     - GIT_EMAIL: "travis@travis-ci.org"
-    - TRAVIS_REPO_SLUG: spirillen/Dead-Domains
+    - TRAVIS_REPO_SLUG: Import-External-Sources/template-v1
     - GIT_BRANCH: master
     - TZ: UTC
     - PYFUNCEBLE_CONFIG_DIR: ${TRAVIS_BUILD_DIR}/dev-tools/
