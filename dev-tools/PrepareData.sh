@@ -1,8 +1,8 @@
 #!/bin/bash
-# This hosts file for DD-WRT Routers with DNSMasq is brought to you by 
+# This hosts file for DD-WRT Routers with DNSMasq is brought to you by
 # https://www.mypdns.org/
 # Copyright: Content: https://gitlab.com/spirillen
-# Source:Content: 
+# Source:Content:
 #
 # Original attributes and credit
 # This hosts file for DD-WRT Routers with DNSMasq is brought to you by Mitchell Krog
@@ -11,7 +11,7 @@
 # The credit for the original bash scripts goes to Mitchell Krogza
 
 # You are free to copy and distribute this file for non-commercial uses,
-# as long the original URL and attribution is included. 
+# as long the original URL and attribution is included.
 
 # Please forward any additions, corrections or comments by logging an issue at
 # https://gitlab.com/my-privacy-dns/support/issues
@@ -23,7 +23,7 @@
 # Type the url of source here
 SOURCE=""
 input1=${TRAVIS_BUILD_DIR}/PULL_REQUESTS/domains.txt
-
+whitelist="$(wget -qO ${TRAVIS_BUILD_DIR}/whitelist 'https://gitlab.com/my-privacy-dns/matrix/matrix/raw/master/source/whitelist/domain.list' && wget -qO- 'https://gitlab.com/my-privacy-dns/matrix/matrix/raw/master/source/whitelist/wildcard.list' >> ${TRAVIS_BUILD_DIR}/whitelist )"
 # *********************************************
 # Get Travis CI Prepared for Committing to Repo
 # *********************************************
@@ -45,7 +45,7 @@ PrepareTravis
 
 PrepareLists () {
 
-    wget -qO- "${SOURCE}" >> ${input1}
+    #wget -qO- "${SOURCE}" >> ${input1}
 
     sort -u -f ${input1} -o ${input1}
     dos2unix ${input1}
@@ -60,7 +60,7 @@ WhiteListing () {
     if [[ "$(git log -1 | tail -1 | xargs)" =~ "ci skip" ]]
         then
             hash uhb_whitelist
-            uhb_whitelist -f "${input1}" -o "${input1}"
+            uhb_whitelist -wc -w" ${whitelist}"-f "${input1}" -o "${input1}"
     fi
 }
 WhiteListing
