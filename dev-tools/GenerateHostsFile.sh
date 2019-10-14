@@ -78,7 +78,7 @@ cat ${input1} | sed '/\./!d' > ${input2} && mv ${input2} ${input1}
 dos2unix ${input1}
 
 cat ${hostsTemplate} > ${tmphostsA}
-printf "### Updated: \"${now}\" Build: \"${my_git_tag}\"\n### Bad Host Count: \"${bad_referrers}\"\n" >> ${tmphostsA}
+printf "### Updated: ${now} Build: ${my_git_tag}\n### Bad Host Count: ${bad_referrers}\n" >> ${tmphostsA}
 cat "${input1}" | awk '/^#/{ next }; {  printf("0.0.0.0\t%s\n",tolower($1)) }' >> ${tmphostsA}
 mv ${tmphostsA} ${hosts}
 
@@ -87,7 +87,7 @@ mv ${tmphostsA} ${hosts}
 # ********************************************************
 
 cat ${dnsmasqTemplate} > ${tmphostsB}
-printf "### Updated: \"${now}\" Build: \"${my_git_tag}\"\n### Bad Host Count: \"${bad_referrers}\"\n" >> ${tmphostsB}
+printf "### Updated: ${now} Build: ${my_git_tag}\n### Bad Host Count: ${bad_referrers}\n" >> ${tmphostsB}
 cat "${input1}" | awk '/^#/{ next }; {  printf("address=/%s/\n",tolower($1)) }' >> ${tmphostsB}
 mv ${tmphostsB} ${dnsmasq}
 
@@ -96,7 +96,7 @@ mv ${tmphostsB} ${dnsmasq}
 # ************************************
 RPZ="$(mktemp)"
 
-printf "forbrukertilsynet.falske.nettbutikker.mypdns.cloud.\t3600\tIN\tSOA\tneed.to.know.only. hostmaster.mypdns.org. `date +%s` 3600 60 604800 60;\nforbrukertilsynet.falske.nettbutikker.mypdns.cloud.\t3600\tIN\tNS\tlocalhost\n" > "${RPZ}"
+printf "localhost.\t3600\tIN\tSOA\tneed.to.know.only. hostmaster.mypdns.org. `date +%s` 3600 60 604800 60;\nlocalhost.\t3600\tIN\tNS\tlocalhost\n" > "${RPZ}"
 cat "${input1}" | awk '/^#/{ next }; {  printf("%s\tCNAME\t.\n*.%s\tCNAME\t.\n",tolower($1),tolower($1)) }' >> "${RPZ}"
 mv "${RPZ}" "${TRAVIS_BUILD_DIR}/mypdns.cloud.rpz"
 
