@@ -1,17 +1,103 @@
-# This hosts file for DD-WRT Routers with DNSMasq is brought to you by 
-# https://www.mypdns.org/
-# Copyright: Content: https://gitlab.com/spirillen
-# Source:Content: 
-#
-# Original attributes and credit
-# This hosts file for DD-WRT Routers with DNSMasq is brought to you by Mitchell Krog
-# Copyright:Code: https://github.com/mitchellkrogza
-# Source:Code: https://github.com/mitchellkrogza/Badd-Boyz-Hosts
-# The credit for the original bash scripts goes to Mitchell Krogza
-
-# You are free to copy and distribute this file for non-commercial uses,
-# as long the original URL and attribution is included. 
-
-# Please forward any additions, corrections or comments by logging an issue at
-# https://gitlab.com/my-privacy-dns/support/issues
-
+/home/travis/build/Import-External-Sources/template-v1/dev-tools/ddwrt-dnsmasq.template### Updated: 2019-10-14address=/adidasko.com/
+address=/adidasoutletnorge.com/
+address=/adidassuperstarnorge.com/
+address=/airmaxskobillige.com/
+address=/allergyfl.com/
+address=/apvoc-ga.com/
+address=/ashskonorge.com/
+address=/assassinfitness.com/
+address=/benshermanoslo.com/
+address=/billigesalg.com/
+address=/billigskos.com/
+address=/bilstokken.com/
+address=/bncentertainment.com/
+address=/bostongrnhsflowers.com/
+address=/caperforaciones.com/
+address=/charpente-ramel.com/
+address=/coralls.com/
+address=/crossfiterada.com/
+address=/crownedwithlaurels.com/
+address=/daradis.com/
+address=/denningwelldrilling.com/
+address=/drakternorge.com/
+address=/drcarolyngroff.com/
+address=/dunjakke-no.com/
+address=/easyliving4you.com/
+address=/eurosko.net/
+address=/fatalfailblog.com/
+address=/festmusikk.com/
+address=/fotballsko-salg.com/
+address=/fotballskotilbud.com/
+address=/gantoslo.com/
+address=/godeskonettbutikk.com/
+address=/godsfillingstation.org/
+address=/gsport.com/
+address=/hernoclothing.com/
+address=/hollisternorge.com/
+address=/horizonbagel.com/
+address=/itsthetrendydealstore.com/
+address=/jakkesalgs.com/
+address=/jakkesnorge.com/
+address=/jessicaivory.com/
+address=/joseph-holland.com/
+address=/klmyu.com/
+address=/legarralazcoz.com/
+address=/lindseysopticians.com/
+address=/linkshe.com/
+address=/locchalet2alpes.com/
+address=/lrgst.com/
+address=/lymaq.com/
+address=/manasporthorse.com/
+address=/mayor4london.com/
+address=/mbtnorge.com/
+address=/meadtalkofthetown.com/
+address=/meladermfacts.com/
+address=/mncprobuild.com/
+address=/moebel-thiems.com/
+address=/moslt.com/
+address=/moteshoes.com/
+address=/mrarmstrongsclass.com/
+address=/mudancaslvc.com/
+address=/museuw.com/
+address=/mycraftypad.com/
+address=/nasajones.com/
+address=/nikebutikks.com/
+address=/no.moncleritalien.com/
+address=/nordartisan.com/
+address=/norfotball.com/
+address=/norgefotball.com/
+address=/norgejakke.com/
+address=/norgejakkerbutikk.com/
+address=/norge.parkaoutdoor.com/
+address=/norgeshoes.com/
+address=/oflike.com/
+address=/omgrm.com/
+address=/ontariokitcarbuilders.com/
+address=/parajumperjakke.net/
+address=/parajumpersit.com/
+address=/parajumpersitoutlet.com/
+address=/parajumpers-longbear.com/
+address=/parajumpersnettbutikk.com/
+address=/parajumpersnorway.com/
+address=/parajumpersoutletnorge.com/
+address=/parajumpers-salg.com/
+address=/parajumperssalg.com/
+address=/pjs.outlet.com/
+address=/pmnft.com/
+address=/popeurope.com/
+address=/quiltstudiolaren.com/
+address=/reeconindustries.com/
+address=/retoaudi.com/
+address=/rsket.com/
+address=/scottfamilyministries.org/
+address=/skoeccosandaler.com/
+address=/skonmdnorge.com/
+address=/ssrodeolivestock.com/
+address=/swellsup.com/
+address=/sykkeltrøye.com/
+address=/tiranaaquapark-eg.com/
+address=/tobiascelebritymusicevents.com/
+address=/um-bs.com/
+address=/vansnorge.com/
+address=/wausauorthopedics.com/
+address=/zaskal.com/
