@@ -1,13 +1,9 @@
-# This hosts file for DD-WRT Routers with DNSMasq is brought to you by 
-# https://www.mypdns.org/
-# Copyright: Content: https://gitlab.com/spirillen
-# Source:Content: 
+# This hosts file for those still have to settle with a Windows OS is brought to you
+# by: https://www.mypdns.org/
+# Copyright: Content: https://www.mypdns.org/
+# Source:Content: https://gitlab.com/my-privacy-dns
 #
-# Original attributes and credit
-# This hosts file for DD-WRT Routers with DNSMasq is brought to you by Mitchell Krog
-# Copyright:Code: https://github.com/mitchellkrogza
-# Source:Code: https://github.com/mitchellkrogza/Badd-Boyz-Hosts
-# The credit for the original bash scripts goes to Mitchell Krogza
+# Source:Code: 
 
 # You are free to copy and distribute this file for non-commercial uses,
 # as long the original URL and attribution is included. 
@@ -18,7 +14,7 @@
 127.0.0.1 localhost
 ::1 localhost #[IPv6]
 
-### Updated: 2019-10-14 00:34:05 +0000 (UTC) Build: V.7
+### Updated: 2019-10-14 00:45:19 +0000 (UTC) Build: V.9
 ### Bad Host Count: 103
 0.0.0.0	adidasko.com
 0.0.0.0	adidasoutletnorge.com
