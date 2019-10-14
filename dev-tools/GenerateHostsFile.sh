@@ -77,7 +77,7 @@ cat ${input1} | sed '/\./!d' > ${input2} && mv ${input2} ${input1}
 
 dos2unix ${input1}
 
-printf ${hostsTemplate} > ${tmphostsA}
+cat ${hostsTemplate} > ${tmphostsA}
 printf "### Updated: "${now}" Build: "${my_git_tag}"\n### Bad Host Count: "${bad_referrers}"\n" >> ${tmphostsA}
 cat "${input1}" | awk '/^#/{ next }; {  printf("0.0.0.0\t%s\n",tolower($1)) }' >> ${tmphostsA}
 mv ${tmphostsA} ${hosts}
@@ -86,7 +86,7 @@ mv ${tmphostsA} ${hosts}
 # PRINT DATE AND TIME OF LAST UPDATE INTO DNSMASQ TEMPLATE
 # ********************************************************
 
-printf ${dnsmasqTemplate} > ${tmphostsB}
+cat ${dnsmasqTemplate} > ${tmphostsB}
 printf "### Updated: "${now}" Build: "${my_git_tag}"\n### Bad Host Count: "${bad_referrers}"\n" >> ${tmphostsB}
 cat "${input1}" | awk '/^#/{ next }; {  printf("address=/%s/\n",tolower($1)) }' >> ${tmphostsB}
 mv ${tmphostsB} ${dnsmasq}
