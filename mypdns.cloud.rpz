@@ -1,4 +1,4 @@
-localhost.	3600	IN	SOA	need.to.know.only. hostmaster.mypdns.org. 1571013919 3600 60 604800 60;
+localhost.	3600	IN	SOA	need.to.know.only. hostmaster.mypdns.org. 1571014856 3600 60 604800 60;
 localhost.	3600	IN	NS	localhost
 adidasko.com	CNAME	.
 *.adidasko.com	CNAME	.

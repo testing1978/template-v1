@@ -2,7 +2,7 @@
 # https://www.mypdns.org/
 # Copyright: Content: https://www.mypdns.org/
 # Source:Content: https://gitlab.com/my-privacy-dns
-#
+# License: AGPL-3.0
 # This hosts file for DD-WRT Routers with DNSMasq is brought to you by Mitchell Krog
 
 # You are free to copy and distribute this file for non-commercial uses,
@@ -11,7 +11,7 @@
 # Please forward any additions, corrections or comments by logging an issue at
 # https://gitlab.com/my-privacy-dns/support/issues
 
-### Updated: 2019-10-14 00:45:19 +0000 (UTC) Build: V.9
+### Updated: 2019-10-14 01:00:56 +0000 (UTC) Build: V.10
 ### Bad Host Count: 103
 address=/adidasko.com/
 address=/adidasoutletnorge.com/

@@ -2,7 +2,7 @@
 # by: https://www.mypdns.org/
 # Copyright: Content: https://www.mypdns.org/
 # Source:Content: https://gitlab.com/my-privacy-dns
-#
+# License: AGPL-3.0
 # Source:Code: 
 
 # You are free to copy and distribute this file for non-commercial uses,
@@ -14,7 +14,7 @@
 127.0.0.1 localhost
 ::1 localhost #[IPv6]
 
-### Updated: 2019-10-14 00:45:19 +0000 (UTC) Build: V.9
+### Updated: 2019-10-14 01:00:56 +0000 (UTC) Build: V.10
 ### Bad Host Count: 103
 0.0.0.0	adidasko.com
 0.0.0.0	adidasoutletnorge.com
